@@ -1,0 +1,24 @@
+.media {
+  font-size: 1em;
+}
+
+.media h1 {
+  color: red;
+}
+
+.media img {
+  margin: 0 auto;
+}
+
+.info {
+  color: blue;
+}
+
+.contact {
+  width: auto;
+}
+
+.contact .contact__adress {
+  color: blue;
+}
+/*# sourceMappingURL=footer.css.map */
