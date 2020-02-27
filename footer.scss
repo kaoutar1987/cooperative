@@ -1,22 +1,39 @@
-.media{
-    font-size: 1em;
-    h1{
-        color: red;
-    }
-    img{
-        margin: 0 auto;
-    }
-}
-.info{
-    color: blue;
-}
-.contact{
-    width: auto;
-    &__adress{
-        color: blue;
-    }
-    &__phone--sign{
-        bottom: 1px solid red;
-    }
 
-}
+
+
+
+footer{
+    background: grey;
+    
+  
+  }
+  .para{
+    margin:15px ;
+  }
+  .info{
+    display: flex;
+  }
+  .formulaire {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  }
+  input{
+    border-radius: 20px;
+    border: 0.3px solid white;
+    height: 10%;
+    width: 100%;
+  }
+  .formulaire button{
+    height: 10%;
+    width: 40%;
+    margin-left:60% ;
+    border: 0.3px solid white;
+    border-radius: 20px;
+  }
+  .contact{
+    margin: 10px;
+    flex-direction: column;
+    padding: 13px;
+  }
+  

@@ -1,24 +1,49 @@
-.media {
-  font-size: 1em;
+footer {
+  background: grey;
 }
 
-.media h1 {
-  color: red;
-}
-
-.media img {
-  margin: 0 auto;
+.para {
+  margin: 15px;
 }
 
 .info {
-  color: blue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.formulaire {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 15px;
+}
+
+input {
+  border-radius: 20px;
+  border: 0.3px solid white;
+  height: 10%;
+  width: 100%;
+}
+
+.formulaire button {
+  height: 10%;
+  width: 40%;
+  margin-left: 60%;
+  border: 0.3px solid white;
+  border-radius: 20px;
 }
 
 .contact {
-  width: auto;
-}
-
-.contact .contact__adress {
-  color: blue;
+  margin: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 13px;
 }
 /*# sourceMappingURL=footer.css.map */
