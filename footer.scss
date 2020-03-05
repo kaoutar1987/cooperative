@@ -1,41 +1,241 @@
 
 footer{
-    background: grey;
-    
-  
-  }
-  .para{
-    margin:15px ;
-  }
-  .info{
-    display: flex;
-  }
-  .formulaire {
-  display: flex;
-  flex-direction: column;
-  margin: 15px;
-  }
-  input{
-    border-radius: 20px;
-    border: 0.3px solid white;
-    height: 10%;
     width: 100%;
-  }
-  .formulaire button{
-    height: 10%;
-    width: 40%;
-    margin-left:60% ;
-    border: 0.3px solid white;
-    border-radius: 20px;
-  }
-  .contact{
-    margin: 10px;
-    flex-direction: column;
-    padding: 13px;
+    background:black;
+    color: #FFCE0D;
+    display: flex;
+    flex-direction: row;
+    font-size: .8em;
+    justify-content: space-between;
+    margin: 30px;
+   
     
-  
+   
+   
+    
+    .info{
+        
+        width: 30%;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 1fr;
+     
+        .logo{
+            width: 100%;
+            grid-column: 1/2;
+            grid-row: 1/2;
 
-  }
-  
+        }
+        .para{
+            grid-column: 2/3;
+            grid-row: 1/2;
+            text-align: left;
+            font-family: 'Franklin Gothic Medium'; 
+            p{
+                padding: 0 30px;
+            }
+            h3{
+                text-align: center;
+            }
+           
+
+            
+        }
+        .media{
+            a{color: #FFCE0D;}
+            grid-column: 1/2;
+            grid-row: 2/3;
+            display: flex;
+            flex-direction: row;
+            i{
+                width: 50%;
+            }
+            .fab{
+                
+                margin: 10px;
+            }
+           
+
+        }
+    }
+    .contact{
+        margin-top: 2px;
+        width: 30%;
+        justify-content: center;
+        font-family: 'Franklin Gothic Medium';
+           
+       
+
+    }
+    
+    .form{
+       
+       
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+
+       
+          
+        font-family:'Franklin Gothic Medium' ;
+
+        &__item{
+            width: 60%;
+            height: 10%;
+            margin-top: 10px;
+            border-radius: 10px;
+            border: none;
+           
+            &--hight{
+                height: 30%;
+               
+            }
+
+            &--width{
+                width: 20%;
+                margin-left: 40%;
+               
+            }
+
+        }
+    }
+
+}
+@media screen and (max-width:768px){
+    footer{
+        .contact{
+            p{
+                margin:20px 0;
+               
+            }
+        }
+        .info{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 1fr 1fr 50%;
+            grid-template-areas:"p1"
+                                 "p2"
+                                 "p3";
+        .logo{
+            grid-area: p1;
+        }
+        .para{
+            grid-area: p2;
+            
+        }
+        .media{
+            grid-area: p3;
+            justify-content: center;
+        }
+    
+        
+
+    }
+   
+                             
+                             
+    }
+
+   
+
+
+}
+   
+     
+
+
+@media screen and (max-width:400px){
+    footer{
+        flex-direction:column;
+        flex-wrap: wrap;
+        .info,
+        .contact{
+            width: 80%;
+            margin: -25px auto;
+
+        }
+        .form{
+           
+            width: 80%;
+            margin: 30px auto;
+           
+           
+        }
+           .info{
+
+             margin-top:3%;   
+            display:grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 50px;
+            grid-template-areas: "p1"
+                                  "p2"
+                                  "p3";   
+            
+            .logo{
+                grid-area: p1;
+                width: 100px;
+                margin: auto;
+                height:129px;
+            }
+            .para{
+                grid-area: p2;
+                padding: 0 10%;
+                h3{
+                    text-align: center;
+                }
+            }
+            .media{
+                
+               
+                position: absolute;
+                justify-content: center;
+                width: 70%;
+                margin: 0 auto;
+                top:800px;
+
+
+
+            }
+        }
+        
+    
+    
+    }
+    .form{
+        height: 250px;
+        margin: 0 auto;
+       h3{
+           text-align: center;
+       }
+       &__item{
+           margin: 0 auto;
+           &--width{
+               padding-left: -20px;
+
+           }
+       }
+       
+        
+      
+       
+           
+            
+        }
+       
+        
+        }
+        
+    
+    .contact{
+        p{
+            margin-left: 50px;
+        }
+       
+
+    }
+
+    
+
+
 
   
